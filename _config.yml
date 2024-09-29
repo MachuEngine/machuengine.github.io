@@ -116,7 +116,7 @@ author:
   name             : "Jongmin Ann"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "스터디하고 있는 내용을 포스팅합니다."
-  location         : "Korea"
+  location         : "Korea."
   email            : "ann10266@gmail.com"
   links:
     - label: "Email"
