@@ -1,10 +1,12 @@
 # main links
 sidebar-category:
-  - title: "카테고리"
+  - title: "Category"
     children:
-      - title: "블로그"
+      - title: "Blog"
         url: "/blog"
-      - title: "카테고리B"
-        url:  "/CategoryB"
-      - title: "카테고리C"
-        url:  "/CategoryC"
+      - title: "Study"
+        url:  "/study"
+      - title: "IT"
+        url:  "/it"
+      - title: "ETC"
+        url:  "/etc"
