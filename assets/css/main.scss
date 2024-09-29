@@ -5,11 +5,33 @@ search: false
 
 @charset "utf-8";
 
+// Google Font 불러오기
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+// Minimal Mistakes 테마의 스킨과 메인 스타일 불러오기
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Font 변경
+// Font 변경 및 크기 조정
 body {
-  font-family: 'Inconsolata', monospace; // 폰트 적용
-  font-size: 10px;  // 전체 폰트 크기를 14px로 설정
+  font-family: 'Inconsolata', monospace; // Inconsolata 폰트 적용
+  font-size: 14px;  // 전체 폰트 크기를 10px로 설정
+}
+
+// 제목의 폰트 크기 조정
+h1 {
+  font-size: 24px;  // h1 태그의 크기를 24px로 설정
+}
+
+h2 {
+  font-size: 20px;  // h2 태그의 크기를 20px로 설정
+}
+
+h3 {
+  font-size: 18px;  // h3 태그의 크기를 18px로 설정
+}
+
+// 본문 텍스트의 폰트 크기 조정
+p {
+  font-size: 10px;  // 본문 텍스트 크기를 10px로 설정
 }
