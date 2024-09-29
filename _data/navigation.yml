@@ -2,6 +2,8 @@
 sidebar-category:
   - title: "Category"
     children:
+      - title: "Introduction"
+        url: "/introduction"
       - title: "Study"
         url: "/study"
       - title: "IT"
