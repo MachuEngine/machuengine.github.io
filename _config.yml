@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "machuEngine"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "MachuEngine"
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Jongmin Ann"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "스터디하고 있는 내용을 포스팅합니다."
+  location         : "Korea"
+  email            : "ann10266@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
