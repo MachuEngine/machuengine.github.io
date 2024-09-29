@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "ANN JONGMIN"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/profile.jpg"
   bio              : "안녕하세요. 안종민의 블로그입니다."
   location         : "Republic of korea"
   email            : "ann10266@gmail.com"
