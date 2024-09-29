@@ -9,4 +9,7 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 // Font 변경
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body {
+  font-family: 'Inconsolata', monospace; // 폰트 적용
+  font-size: 14px;  // 전체 폰트 크기를 14px로 설정
+}
