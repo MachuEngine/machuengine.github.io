@@ -33,31 +33,59 @@
         {% include_cached footer.html %}
       </footer>
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-          document.querySelectorAll('pre').forEach((block) => {
-              var button = document.createElement('button');
-              button.innerHTML = 'Copy';
-              button.className = 'copy-button';
+    <style>
+      .copy-button {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          padding: 5px 10px;
+          font-size: 12px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+          opacity: 0.8;
+      }
 
-              block.appendChild(button);
+      .copy-button:hover {
+          opacity: 1;
+          background-color: #45a049;
+      }
 
-              var clipboard = new ClipboardJS(button, {
-                  target: function(trigger) {
-                      return trigger.previousElementSibling;
-                  }
-              });
+      pre {
+          position: relative;
+          padding: 15px;
+          background-color: #f5f5f5;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre').forEach((block) => {
+            var button = document.createElement('button');
+            button.innerHTML = 'Copy';
+            button.className = 'copy-button';
 
-              clipboard.on('success', function(e) {
-                  e.clearSelection();
-                  e.trigger.textContent = 'Copied!';
-                  setTimeout(function() {
-                      e.trigger.textContent = 'Copy';
-                  }, 2000);
-              });
-          });
-      });
-    </script>
+            block.appendChild(button);
+
+            var clipboard = new ClipboardJS(button, {
+                target: function(trigger) {
+                    return trigger.previousElementSibling;
+                }
+            });
+
+            clipboard.on('success', function(e) {
+                e.clearSelection();
+                e.trigger.textContent = 'Copied!';
+                setTimeout(function() {
+                    e.trigger.textContent = 'Copy';
+                }, 2000);
+            });
+        });
+    });
+  </script>
 
     {% include scripts.html %}
   </body>
