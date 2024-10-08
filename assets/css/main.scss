@@ -34,3 +34,7 @@ h3 {
 p {
   font-size: 12px;  // 본문 텍스트 크기를 10px로 설정
 }
+
+/* archive 레이아웃 전용 스타일 */
+.layout-archive main {
+  font-size: 14px; /* archive 레이아웃에서의 글씨 크기 감소 */
