@@ -1,0 +1,40 @@
+/* _sass/custom.scss */
+
+/* 카테고리 버튼 컨테이너 스타일 */
+.category-buttons,
+.tag-buttons {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 카테고리 버튼 스타일 */
+.btn-category {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* 원하는 색상으로 변경 */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9; /* 원하는 호버 색상으로 변경 */
+  }
+}
+
+/* 태그 버튼 스타일 */
+.btn-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #2ecc71; /* 원하는 색상으로 변경 */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #27ae60; /* 원하는 호버 색상으로 변경 */
+  }
+}
