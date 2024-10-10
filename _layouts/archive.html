@@ -21,16 +21,6 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
     {% endunless %}
-
-    <!-- 카테고리 버튼 추가 -->
-    <div class="category-buttons">
-      {% for category, posts in site.categories %}
-        <a href="{{ site.baseurl }}/{{ category | slugify }}/" class="btn-category">
-          {{ category | capitalize }}
-        </a>
-      {% endfor %}
-    </div>
-
     {{ content }}
   </div>
 </div>
