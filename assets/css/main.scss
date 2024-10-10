@@ -37,7 +37,7 @@ p {
 
 /* archive 레이아웃 전용 스타일 */
 .archive {
-  font-size: 14px; /* archive 레이아웃에서의 글씨 크기 감소 */
+  font-size: 12px; /* archive 레이아웃에서의 글씨 크기 감소 */
 
   /* 자식 요소들의 폰트 크기 조정 */
   h1 {
@@ -54,27 +54,5 @@ p {
 
   p {
     font-size: 11px; /* p 태그 글씨 크기 축소 */
-  }
-
-  /* 카테고리 버튼 스타일 */
-  .category-buttons {
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .btn-category {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db; /* 원하는 색상으로 변경 */
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #2980b9; /* 원하는 호버 색상으로 변경 */
-    }
   }
 }

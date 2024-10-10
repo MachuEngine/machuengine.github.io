@@ -21,18 +21,6 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
     {% endunless %}
-
-    <!-- 카테고리 버튼 추가 -->
-    <div class="category-buttons">
-      {% for category in site.categories %}
-        {% unless category[0] == '기타_카테고리_제외' %} <!-- 특정 카테고리를 제외하고 싶을 경우 사용 -->
-          <a href="{{ site.baseurl }}/{{ category[0] | slugify }}/" class="btn-category">
-            {{ category[0] | capitalize }}
-          </a>
-        {% endunless %}
-      {% endfor %}
-    </div>
-
     {{ content }}
   </div>
 </div>
