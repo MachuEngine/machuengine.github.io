@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
-{% include archive_header.html %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
 
 <div id="main" role="main">
   {% include sidebar.html %}
@@ -10,27 +21,6 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
     {% endunless %}
-
-    <!-- 카테고리 버튼 추가 -->
-    <div class="category-buttons">
-      {% for category, posts in site.categories %}
-        <a href="{{ site.baseurl }}/{{ category | slugify }}/" class="btn-category">
-          {{ category | capitalize }}
-        </a>
-      {% endfor %}
-    </div>
-
-    <!-- 태그 버튼 추가 -->
-    <div class="tag-buttons">
-      {% for tag in site.tags %}
-        <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="btn-tag">
-          {{ tag | capitalize }}
-        </a>
-      {% endfor %}
-    </div>
-
     {{ content }}
   </div>
 </div>
-
-{% include archive_footer.html %}
