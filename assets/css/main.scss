@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+/* # Only the main Sass file needs front matter (the dashes are enough) */
 search: false
 ---
 
@@ -15,6 +15,7 @@ search: false
 // Font 변경 및 크기 조정
 body {
   font-family: 'Inconsolata', monospace; // Inconsolata 폰트 적용
+  font-size: 14px;
 }
 
 // 제목의 폰트 크기 조정
@@ -32,27 +33,5 @@ h3 {
 
 // 본문 텍스트의 폰트 크기 조정
 p {
-  font-size: 12px;  // 본문 텍스트 크기를 12px로 설정
-}
-
-/* archive 레이아웃 전용 스타일 */
-.archive {
-  font-size: 14px; /* archive 레이아웃에서의 글씨 크기 감소 */
-
-  /* 자식 요소들의 폰트 크기 조정 */
-  h1 {
-    font-size: 22px; /* h1 태그 크기 약간 축소 */
-  }
-
-  h2 {
-    font-size: 18px; /* h2 태그 크기 약간 축소 */
-  }
-
-  h3 {
-    font-size: 16px; /* h3 태그 크기 약간 축소 */
-  }
-
-  p {
-    font-size: 14px; /* p 태그 글씨 크기 축소 */
-  }
+  font-size: 14px;  // 본문 텍스트 크기를 12px로 설정
 }
