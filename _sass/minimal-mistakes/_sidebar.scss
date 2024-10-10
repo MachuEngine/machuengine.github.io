@@ -121,28 +121,31 @@
    Author profile and links
    ========================================================================== */
 
-.author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 36px;
-  height: 36px;
-
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-
-  img {
-    max-width: 110px;
-    border-radius: 50%;
-
+   .author__avatar {
+    display: block;  /* table-cell 대신 block으로 설정 */
+    width: 36px;
+    height: 36px;
+    overflow: hidden; /* 테두리 밖으로 넘치는 부분 숨김 */
+    border-radius: 50%; /* 여기에도 적용하면 이미지가 완전히 원형으로 표시됩니다 */
+  
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      width: auto;
+      height: auto;
+    }
+  
+    img {
+      width: 100%; /* 부모의 크기에 맞추기 */
+      height: auto;
+      border-radius: 50%; /* 이미지 자체를 원형으로 만들기 */
+      max-width: 110px; /* 최대 너비 제한 */
+  
+      @include breakpoint($large) {
+        padding: 5px;
+        border: 1px solid $border-color;
+      }
     }
   }
-}
+  
 
 .author__content {
   display: table-cell;
