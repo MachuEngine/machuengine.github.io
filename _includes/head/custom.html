@@ -7,9 +7,16 @@
 <!-- custom.html -->
 
 <!-- 기존 head 콘텐츠 -->
-<meta name="description" content="{{ page.description | escape }}">
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-
-<!-- MathJax 추가 -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
