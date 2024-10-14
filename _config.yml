@@ -218,9 +218,9 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   syntax_highlighter: rouge
-  math_engine: mathjax
-  math_engine_opts:
-    preview: true
+  #math_engine: mathjax
+  #math_engine_opts:
+  #  preview: true
 
 
 # Sass/SCSS
