@@ -34,7 +34,7 @@ date: "2024-11-05"
 
 ### 분류기 품질을 측정하는 비용함수
 $$
-J(\Theta) = \sum_{{x_k} \in Y} (-t_k) (\mathbf{w}^T \mathbf{x_k} + b)
+J(\Theta) = \sum_{\{x_k\} \in Y} (-t_k) (\mathbf{w}^T \mathbf{x_k} + b)
 $$
 
 - \( Y \): (오분류된 샘플 집합 또는 모든 샘플)
