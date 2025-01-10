@@ -66,7 +66,7 @@ $$
 ### **🔹 Step 2: 어텐션 점수(유사도) 계산**
 - **Query 벡터(\(Q\))**와 **Key 벡터(\(K\))** 간의 유사도를 점곱(dot product) 연산으로 계산:
 
-<img src="/assets/images/self-Attention2.png" alt="Self-Attention">
+<img src="/assets/images/self-attention2.png" alt="Self-Attention">
 
 ---
 
