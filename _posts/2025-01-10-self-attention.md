@@ -1,6 +1,6 @@
 ---
 layout: "single"
-title: "[AI] Self-Attention Mechanism"
+title: "[AI][Transformer] Self-Attention"
 categories:
   - ai
 tags:
@@ -56,7 +56,7 @@ $$
 Q = XW_q, \quad K = XW_k, \quad V = XW_v
 $$
 
-여기서 \( W_q, W_k, W_v \)는 **학습 가능한 가중치 행렬**입니다.
+여기서 \( W_q, W_k, W_v \)는 **학습 가능한 가중치 행렬**.
 
 ---
 
