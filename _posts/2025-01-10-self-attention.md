@@ -21,6 +21,9 @@ date: "2025-01-10"
 ## **1️⃣ Self-Attention이란?**
 Self-Attention은 **각 단어가 문장 내 다른 단어들과 얼마나 연관이 있는지를 계산하는 메커니즘**.
 
+<img src="/assets/images/self-Attention1.png" alt="Self-Attention">
+
+
 💡 **예제 문장:**  
 *"그 동물은 너무 피곤해서 길을 건너지 않았다."*  
 ➡ 여기서 *"그"*는 *"동물"*을 가리키는지? 아니면 *"길"*을 의미하는지?  
@@ -62,6 +65,10 @@ $$
 
 ### **🔹 Step 2: 어텐션 점수(유사도) 계산**
 - **Query 벡터(\(Q\))**와 **Key 벡터(\(K\))** 간의 유사도를 점곱(dot product) 연산으로 계산:
+
+<img src="/assets/images/self-Attention2.png" alt="Self-Attention">
+
+---
 
 $$
 \frac{QK^T}{\sqrt{d_k}}
@@ -118,3 +125,29 @@ $$
 ✅ **병렬 연산이 가능** (기존 RNN은 순차적 처리이지만, Self-Attention은 병렬 처리 지원)  
 ✅ **긴 문장에서도 멀리 떨어진 단어 간 관계를 학습 가능**  
 ✅ **번역, 질의응답, 요약, 대화 모델 등 다양한 NLP 작업에서 필수적**   
+
+///
+
+📌 Self-Attention에서 연관성(Score)의 기준
+Self-Attention 메커니즘에서 연관성(Score) 은 입력 시퀀스의 각 요소(토큰)들이 서로 얼마나 중요한지를 나타내는 값입니다.
+즉, 한 단어(토큰)가 다른 단어(토큰)와 얼마나 관련이 있는지를 측정하는 것입니다.
+
+🔹 연관성을 결정하는 기준
+의미적 유사성 (Semantic Similarity)
+
+예제에서 "dog"와 "wagging"은 관련이 높음 (개가 꼬리를 흔드는 동작을 나타냄).
+"the" 같은 일반적인 단어는 특정한 의미를 제공하지 않으므로 대부분의 단어와 연관성이 낮음.
+문법적 관계 (Syntactic Relationship)
+
+주어("dog")와 동사("is wagging")는 문장에서 필수적인 관계를 형성.
+형용사("cute")는 명사("dog")와 관계가 강함.
+위치 정보 (Positional Relevance)
+
+Self-Attention은 기본적으로 위치 정보를 직접 포함하지 않지만, 위치 인코딩(Positional Encoding) 을 통해 순서를 학습.
+예를 들어, "wagging"과 "tail"은 서로 가까운 위치에 있어서 관련성이 높음.
+문맥(Context)
+
+단어의 의미는 주변 단어들에 의해 결정됨.
+"its"는 명확하게 "dog"의 꼬리를 나타내므로 "dog"와 "its"의 연관성이 강함.
+
+
