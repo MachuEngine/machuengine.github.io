@@ -1,7 +1,7 @@
 ---
 title: "it"
 layout: archive
-permalink: /it
+permalink: /it/
 ---
 {% assign posts = site.categories.it %}
 {% for post in posts %}

@@ -1,7 +1,7 @@
 ---
 title: "aws"
 layout: archive
-permalink: /aws
+permalink: /aws/
 ---
 {% assign posts = site.categories.aws %}
 {% for post in posts %}

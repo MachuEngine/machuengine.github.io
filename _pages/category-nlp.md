@@ -1,7 +1,7 @@
 ---
 title: "nlp"
 layout: archive
-permalink: /nlp
+permalink: /nlp/
 ---
 {% assign posts = site.categories.nlp %}
 {% for post in posts %}

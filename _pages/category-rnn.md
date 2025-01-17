@@ -1,7 +1,7 @@
 ---
 title: "rnn"
 layout: archive
-permalink: /rnn
+permalink: /rnn/
 ---
 {% assign posts = site.categories.rnn %}
 {% for post in posts %}

@@ -1,7 +1,7 @@
 ---
 title: "cnn"
 layout: archive
-permalink: /cnn
+permalink: /cnn/
 ---
 {% assign posts = site.categories.cnn %}
 {% for post in posts %}

@@ -1,7 +1,7 @@
 ---
 title: "python"
 layout: archive
-permalink: /python
+permalink: /python/
 ---
 {% assign posts = site.categories.python %}
 {% for post in posts %}

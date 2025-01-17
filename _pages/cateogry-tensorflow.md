@@ -1,7 +1,7 @@
 ---
 title: "tensorflow"
 layout: archive
-permalink: /tensorflow
+permalink: /tensorflow/
 ---
 {% assign posts = site.categories.tensorflow %}
 {% for post in posts %}

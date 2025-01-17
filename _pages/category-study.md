@@ -1,7 +1,7 @@
 ---
 title: "study"
 layout: archive
-permalink: /study
+permalink: /study/
 ---
 {% assign posts = site.categories.study %}
 {% for post in posts %}

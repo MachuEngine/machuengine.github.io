@@ -1,7 +1,7 @@
 ---
 title: "pytorch"
 layout: archive
-permalink: /pytorch
+permalink: /pytorch/
 ---
 {% assign posts = site.categories.pytorch %}
 {% for post in posts %}

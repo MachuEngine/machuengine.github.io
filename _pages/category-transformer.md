@@ -1,7 +1,7 @@
 ---
 title: "transformer"
 layout: archive
-permalink: /transformer
+permalink: /transformer/
 ---
 {% assign posts = site.categories.transformer %}
 {% for post in posts %}

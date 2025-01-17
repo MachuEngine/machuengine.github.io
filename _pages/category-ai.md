@@ -1,7 +1,7 @@
 ---
 title: "ai"
 layout: archive
-permalink: /ai
+permalink: /ai/
 ---
 {% assign posts = site.categories.ai %}
 {% for post in posts %}

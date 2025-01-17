@@ -1,7 +1,7 @@
 ---
 title: "fundamental"
 layout: archive
-permalink: /fundamental
+permalink: /fundamental/
 ---
 {% assign posts = site.categories.fundamental %}
 {% for post in posts %}

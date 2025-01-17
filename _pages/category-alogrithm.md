@@ -1,7 +1,7 @@
 ---
 title: "algorithm"
 layout: archive
-permalink: /algorithm
+permalink: /algorithm/
 ---
 {% assign posts = site.categories.algorithm %}
 {% for post in posts %}
