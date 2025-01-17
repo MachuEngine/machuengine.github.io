@@ -35,3 +35,11 @@ h3 {
 p {
   font-size: 15px;  // 본문 텍스트 크기를 12px로 설정
 }
+
+/* 코드 블록 배경색을 검은색으로 설정 */
+pre, code, kbd, samp {
+  background-color: #000; /* 검은색 */
+  color: #fff; /* 흰색 텍스트 */
+  border-radius: 5px; /* 둥근 모서리 (선택 사항) */
+  padding: 10px; /* 내부 여백 */
+}
