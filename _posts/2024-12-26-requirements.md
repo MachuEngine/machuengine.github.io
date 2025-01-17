@@ -1,5 +1,5 @@
 ---
-layout: "single"
+layout: single
 title: "[AI] requirements.txt와 environment.yml 파일 생성"
 categories:
   - python

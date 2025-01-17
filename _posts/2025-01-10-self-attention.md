@@ -1,5 +1,5 @@
 ---
-layout: "single"
+layout: single
 title: "[AI][Transformer] Self-Attention"
 categories:
   - transformer

@@ -1,8 +1,8 @@
 ---
-layout: "single"
+layout: single
 title: "[패턴인식] 신경망"
 categories:
-  - pattern recognition
+  - pattern-recognition
 tags:
   - 패턴인식
   - 신경망

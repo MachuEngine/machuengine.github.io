@@ -1,7 +1,9 @@
 ---
-title: "paperreading"
+title: "paper reading"
 layout: archive
-permalink: /paper reading
+permalink: /paper-reading/
 ---
-{% assign posts = site.categories.ai %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% assign posts = site.categories.paper-reading %}
+{% for post in posts %}
+  {% include archive-single.html type="entries" %}
+{% endfor %}

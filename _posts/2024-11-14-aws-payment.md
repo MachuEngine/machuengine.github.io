@@ -1,5 +1,5 @@
 ---
-layout: "single"
+layout: single
 title: "[AI] AWS - EC2 사용 후 비용 청구"
 categories:
   - aws
