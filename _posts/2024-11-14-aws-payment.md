@@ -2,7 +2,7 @@
 layout: "single"
 title: "[AI] AWS - EC2 사용 후 비용 청구"
 categories:
-  - ai
+  - aws
 tags:
   - AWS
 description: "아마존 웹 서비스 비용 청구"

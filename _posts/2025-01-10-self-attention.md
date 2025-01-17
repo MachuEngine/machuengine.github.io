@@ -2,7 +2,7 @@
 layout: "single"
 title: "[AI][Transformer] Self-Attention"
 categories:
-  - ai
+  - transformer
 tags:
   - Self-Attention Mechanism
   - transformer

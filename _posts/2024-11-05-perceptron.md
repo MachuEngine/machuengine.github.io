@@ -2,7 +2,7 @@
 layout: "single"
 title: "[패턴인식] 신경망"
 categories:
-  - study
+  - pattern recognition
 tags:
   - 패턴인식
   - 신경망
