@@ -36,10 +36,27 @@ p {
   font-size: 15px;  // 본문 텍스트 크기를 12px로 설정
 }
 
-/* 코드 블록 배경색을 검은색으로 설정 */
+/* 기존 설정 유지 */
 pre, code, kbd, samp {
   background-color: #000; /* 검은색 */
   color: #fff; /* 흰색 텍스트 */
-  border-radius: 5px; /* 둥근 모서리 (선택 사항) */
+  border-radius: 5px; /* 둥근 모서리 */
   padding: 10px; /* 내부 여백 */
+}
+
+/* pre 태그에 추가적인 스타일 */
+pre {
+  background-color: #000; /* 전체 박스 배경색 */
+  color: #fff; /* 텍스트 색상 */
+  padding: 15px; /* 박스 안쪽 여백 (조금 더 여유롭게 설정) */
+  border-radius: 8px; /* 모서리를 둥글게 */
+  overflow-x: auto; /* 긴 코드가 스크롤되도록 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 선택: 박스 그림자 추가 */
+}
+
+/* code 태그에 추가적인 스타일 */
+code {
+  background-color: transparent; /* 개별 코드의 배경색을 투명하게 */
+  color: inherit; /* 부모(pre)의 색상을 상속 */
+  padding: 0; /* 불필요한 내부 여백 제거 */
 }
